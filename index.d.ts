@@ -3,10 +3,9 @@ declare module "*.scss" {
   export = content
 }
 
-// dom custom event
 interface CustomEventMap {
   nav: CustomEvent<{ url: FullSlug }>
-  themechange: CustomEvent<{ theme: "light" | "dark" }>
+  themechange: CustomEvent<{ theme: "dark" | "light" }>
 }
 
 declare const fetchData: Promise<ContentIndex>
