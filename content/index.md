@@ -1,5 +1,6 @@
 ---
-title: Welcome to Quartz
+title: I live of abstract concepts like light,
+minerals and osmosis.
 ---
 
 This is a blank Quartz installation.
