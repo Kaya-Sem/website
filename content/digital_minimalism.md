@@ -1,6 +1,6 @@
 ---
 abstract: "How intentional usage and carefull consideration of technology can prevent a life ruined."
-isdraft: false
+draft: true
 title: Digital Minimalism
 date: 2024-06-26
 ---
