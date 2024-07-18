@@ -1,6 +1,4 @@
 ---
-abstract: Constant music consumption hinders social interactions, deprives the brain of necessary downtime, and diminishes musical appreciation. By taking intentional breaks from music, you can enhance social engagement, mental clarity, and overall enjoyment of life. Embracing these 'Mini Music Sabbaths' can lead to a more balanced and fulfilling existence.
-isdraft: false
 title: Rediscover Silence
 date: 2024-07-06
 tags:
