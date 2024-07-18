@@ -1,8 +1,13 @@
 ---
-title: 'I live of abstract concepts like light, minerals and osmosis.'
+title: 'Anthology'
 ---
 
-An anthology of thoughts, reflections, interesting
-topics and art covering philosophy, science,
-literature, personal experiences and social
-commentary.
+An collections of thoughts, reflections and interesting
+topics.
+
+Covers art, philosophy, science, literature, personal experiences and social commentary.
+
+## About me
+
+I live of abstract concepts like minerals, light
+and osmosis.
