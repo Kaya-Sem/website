@@ -1,5 +1,5 @@
 ---
-title: Rediscover Silence
+title: 'Rediscover Silence'
 tags:
   - music
   - technology
