@@ -1,10 +1,12 @@
 ---
-title: snailmail
+title: 'Snail Mail'
 date: 2024-07-17
 tags:
   - creative
   - social
 ---
+
+([snail mail](https://www.merriam-webster.com/dictionary/snail%20mail))
 
 True friendships are worth their weight in gold. Just like in romantic relationships, it is easy to take things for granted and stop putting in as much effort. Friendships and relationships require regular maintenance and upkeep. It is important to keep investing and to prevent it becoming a slog.
 
