@@ -1,12 +1,14 @@
 ---
 title: Rediscover Silence
-date: 2024-07-06
 tags:
   - music
   - technology
   - boredom
   - creative
 ---
+
+
+date: 2024-07-06
 
 Modern phones and MP3 players allow us to listen to music anytime and anywhere—in between activities, while waiting for public transport, during our commute, in queues, and even while walking. You might not think this is an issue. Unfortunately, it probably is.
 
