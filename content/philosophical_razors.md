@@ -1,6 +1,7 @@
 ---
 title: Philosophical Razors
-isdraft: false
+isdraft: true
+draft: true
 tags:
   - philosophy
 ---
