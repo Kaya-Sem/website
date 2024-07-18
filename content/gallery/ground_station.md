@@ -1,4 +1,5 @@
 ---
+draft:true
 title: Ground Station BE
 tags:
   - urbex
