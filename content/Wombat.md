@@ -20,7 +20,7 @@ Group Name: Mob, colony, wisdom
 
 The wombat's primary defense is their toughnened rear hide, with most of the posterior made of cartilage. In other words, they have a rock-hard dump truck of an ass, lacking a tail and sporting few pain receptors. 
 
-When they are being chased, they resort to their tunnels (a common wombat occupies up to 23 hectares), using their badonkadonk to block a pursuing attacker. According to an [urban legend](https://en.wikipedia.org/wiki/Urban_legend), and the findings of crushed fox and dingo skulls around wombat burrows, have led researchers to theorize that these marsupials mat also use their armored ass to smash predator's skulls against the roof of their burrow, effectively twerking it to death.
+When they are being chased, they resort to their tunnels (a common wombat occupies up to 23 hectares), using their badonkadonk to block the entrance from a pursuing attacker. According to an [urban legend](https://en.wikipedia.org/wiki/Urban_legend), and the findings of crushed fox and dingo skulls around wombat burrows, have led researchers to theorize that these marsupials mat also use their armored ass to smash predator's skulls against the roof of their burrow, effectively twerking it to death.
 
 [Here is an animation to spark your imagination.](https://youtu.be/v0sjqnK3Jms?t=167)
 
