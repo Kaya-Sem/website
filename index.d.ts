@@ -3,6 +3,7 @@ declare module "*.scss" {
   export = content
 }
 
+
 interface CustomEventMap {
   nav: CustomEvent<{ url: FullSlug }>
   themechange: CustomEvent<{ theme: "light" | "dark" }>
