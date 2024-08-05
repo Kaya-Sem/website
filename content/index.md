@@ -7,6 +7,10 @@ topics.
 
 Covers art, philosophy, science, literature, personal experiences and social commentary.
 
+[[Wombat.md]]
+[[snailmail.md]]
+[[music_breaks.md]]
+
 ## About me
 
 I live off abstract concepts like minerals, light
