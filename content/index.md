@@ -8,9 +8,10 @@ topics.
 Covers art, philosophy, science, literature, personal experiences and social commentary.
 
 [Wombat](Wombat.md)
-[[Wombat.md]]
-[[snailmail.md]]
-[[music_breaks.md]]
+
+[Snail Mail](snailmail.md)
+
+[Rediscover Silence](music_breaks.md)
 
 ## About me
 
