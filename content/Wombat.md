@@ -2,7 +2,7 @@
 abstract: "Nature's hardasses"
 draft: false
 title: Wombat
-date: 2024-06-26
+date: 2024-08-05
 ---
 
 Common Name: Wombat
