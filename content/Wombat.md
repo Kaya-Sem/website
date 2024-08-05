@@ -5,17 +5,12 @@ title: Wombat
 date: 2024-06-26
 ---
 
-
-# Wombat
-
-> A stocky terrestrial marsupial.
-
 Common Name: Wombat
 
 Scientific Name: Vombatus ursinus
 
-
 Type: Mammals
+
 Diet: Herbivore
 
 Group Name: Mob, colony, wisdom
