@@ -62,7 +62,7 @@ Patrick was orphaned as a tiny baby, and hand raised by the owner thirty years a
 As for his inability to connect with the female wombats, his trainers say he's just too much of a 'SNAW' - a sensitive, new-age wombat, according to the [ABC](https://www.abc.net.au/news/2015-08-25/worlds-oldest-captive-wombat-patrick-joins-tinder-to-find-love/6722348)
 
 ![[gallery/Screenshot_20240630_211032.png]]
-![](.data/patrick.jpeg)
+![[.data/patrick.jpeg]]
 
 > Rest in Peace Patrick the Wombat
 
