@@ -1,0 +1,92 @@
+{
+    "projects": [
+        {
+            "id": "2025-ddf964418eff45ae947fdeaeec820a81",
+            "name": "We are Hackathon 2025",
+            "description": "Fun hackathon hosted by We Are.",
+            "link": "https://github.com/yourusername/hack",
+            "tags": ["event", "flutter", "mobile"],
+            "wip": true
+        },
+        {
+            "id": "2025-03073a14258d4dec805a78d50ad1f344",
+            "name": "Outdoor Gear Shops",
+            "description": "List of outdoor gear shops",
+            "link": "https://outdoorshops.kaya-sem.com/",
+            "tags": ["web"],
+            "wip": false
+        },
+        {
+            "id": "2024-0356d86e0f434447a5aa19089ae2dcd",
+            "name": "Commandtrein",
+            "description": "CLI NMBS schedule tool",
+            "link": "https://github.com/Kaya-Sem/commandtrein",
+            "tags": ["go", "cli", "api"],
+            "wip": false
+        },
+        {
+            "id": "2025-e15f2d97d7464a98bc7151b20e0565e7",
+            "name": "RSS-builder",
+            "description": "Simple RSS library",
+            "link": "https://github.com/Kaya-Sem/rss-builder",
+            "tags": ["go", "RSS", "library"],
+            "wip": false
+        },
+        {
+            "id": "2025-a9566dacc1e6455ebb7fff144d6e7e50",
+            "name": "Ouroboros",
+            "description": "Peer-to-peer UDP client",
+            "link": "https://github.com/yourusername/task-manager",
+            "tags": ["go", "networking", "docker", "p2p"],
+            "wip": true
+        },
+        {
+            "id": "2025-0d20a3c04bad4366bf78ad9ff2e607d2",
+            "name": "️Semlink",
+            "description": "Semantic folder mounting",
+            "link": "https://github.com/Kaya-Sem/semlink",
+            "tags": ["go", "cli", "linux", "SQL"],
+            "wip": true
+        },
+        {
+            "id": "2025-a9deb489bda540d09765aa66054da98b",
+            "name": "Gent Nachtleven",
+            "description": "Aggregation website for concerts and events in Gent",
+            "link": "https://github.com/Kaya-Sem/gentnachtleven",
+            "tags": ["webscraping", "web", "go"],
+            "wip": true
+        },
+        {
+            "id": "2024-7a49c319ffbd411999e12bf7f248aeed",
+            "name": "Oopsie",
+            "description": "Simple Error display library for Go",
+            "link": "https://github.com/Kaya-Sem/oopsie",
+            "tags": ["go", "cli", "library"],
+            "wip": false
+        },
+        {
+            "id": "2025-ecd5628b92ab4e0aa920854ed37feb80",
+            "name": "Gent-nieuws RSS",
+            "description": "Gent Nieuwsberichten RSS generator",
+            "link": "https://github.com/Kaya-Sem/gent-nieuws-rss",
+            "tags": ["go", "RSS", "docker"],
+            "wip": false
+        },
+        {
+            "id": "2025-662550edefdb423ea480deead8279d1b",
+            "name": "Friendsync",
+            "description": "Organize meeting with friends efficiently",
+            "link": "https://github.com/yourusername/task-manager",
+            "tags": ["flutter", "mobile", "firebase"],
+            "wip": true
+        },
+        {
+            "id": "2025-b0c866ac55e6441caf619a98d9a8c6f8",
+            "name": "kaya-sem.com",
+            "description": "Portfolio website showcasing my projects and skills",
+            "link": "https://github.com/yourusername/data-viz",
+            "tags": ["d3", "web"],
+            "wip": false
+        }
+    ]
+} 
