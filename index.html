@@ -33,10 +33,12 @@
                 transform: scale(1);
                 filter: brightness(1);
             }
+
             50% {
                 transform: scale(1.05);
                 filter: brightness(1.2);
             }
+
             100% {
                 transform: scale(1);
                 filter: brightness(1);
@@ -47,17 +49,43 @@
             0% {
                 text-shadow: 0 0 5px #ff0000;
             }
+
             25% {
                 text-shadow: 2px 2px 8px #ff0000, -2px -2px 8px #ff0000;
             }
+
             50% {
                 text-shadow: 0 0 10px #ff0000;
             }
+
             75% {
                 text-shadow: -2px -2px 8px #ff0000, 2px 2px 8px #ff0000;
             }
+
             100% {
                 text-shadow: 0 0 5px #ff0000;
+            }
+        }
+
+        @keyframes angelic {
+            0% {
+                text-shadow: 0 0 5px #ffffff;
+            }
+
+            25% {
+                text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #ffffff;
+            }
+
+            75% {
+                text-shadow: -2px -2px 8px #ffffff, 2px 2px 8px #ffffff;
+            }
+
+            100% {
+                text-shadow: 0 0 5px #ffffff;
             }
         }
 
@@ -68,6 +96,11 @@
         .demonic {
             animation: demonic 4s ease-in-out infinite;
             color: #ff3333;
+        }
+
+        .angelic {
+            animation: angelic 4s ease-in-out infinite;
+            color: white;
         }
     </style>
 </head>
@@ -112,12 +145,13 @@
         <li>alcohol</li>
         <li>car-centrism</li>
         <li>energy drinks and coffee (caffeine)</li>
+        <li>javascript</li>
     </ul>
 
 
     <img src="mindcontrol.webp" alt="Mind Control" style="max-width: 30%; height: auto;" class="pulsate">
 
-    <p class="standout"> Things that are literally angelic: </p>
+    <p class="standout angelic"> Things that are literally angelic: </p>
 
     <ul>
         <li>digital piracy</li>
