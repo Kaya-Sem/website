@@ -27,6 +27,48 @@
             color: white;
             padding: 8px;
         }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+                filter: brightness(1);
+            }
+            50% {
+                transform: scale(1.05);
+                filter: brightness(1.2);
+            }
+            100% {
+                transform: scale(1);
+                filter: brightness(1);
+            }
+        }
+
+        @keyframes demonic {
+            0% {
+                text-shadow: 0 0 5px #ff0000;
+            }
+            25% {
+                text-shadow: 2px 2px 8px #ff0000, -2px -2px 8px #ff0000;
+            }
+            50% {
+                text-shadow: 0 0 10px #ff0000;
+            }
+            75% {
+                text-shadow: -2px -2px 8px #ff0000, 2px 2px 8px #ff0000;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff0000;
+            }
+        }
+
+        .pulsate {
+            animation: pulsate 2s ease-in-out infinite;
+        }
+
+        .demonic {
+            animation: demonic 4s ease-in-out infinite;
+            color: #ff3333;
+        }
     </style>
 </head>
 
@@ -57,10 +99,9 @@
     </ul>
 
 
-    <p class="standout"> Things that are literally demonic: </p>
+    <p class="standout demonic"> Things that are literally demonic: </p>
 
-    <ul>
-
+    <ul class="demonic-list">
         <li>social media</li>
         <li>computer mice</li>
         <li>television, movies and series</li>
@@ -71,11 +112,10 @@
         <li>alcohol</li>
         <li>car-centrism</li>
         <li>energy drinks and coffee (caffeine)</li>
-
     </ul>
 
 
-    <img src="mindcontrol.webp" alt="Mind Control" style="max-width: 30%; height: auto;">
+    <img src="mindcontrol.webp" alt="Mind Control" style="max-width: 30%; height: auto;" class="pulsate">
 
     <p class="standout"> Things that are literally angelic: </p>
 
@@ -164,12 +204,12 @@
                         border="0"
                         src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655929460l/60850767._SX98_.jpg" /></a>
             </div>
-            <div class="gr_grid_book_container"><a title="The Three-Body Problem (Remembrance of Earth’s Past, #1)"
+            <div class="gr_grid_book_container"><a title="The Three-Body Problem (Remembrance of Earth's Past, #1)"
                     rel="nofollow" href="https://www.goodreads.com/book/show/20518872-the-three-body-problem"><img
                         alt="The Three-Body Problem" border="0"
                         src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415428227l/20518872._SX98_.jpg" /></a>
             </div>
-            <div class="gr_grid_book_container"><a title="The Dark Forest (Remembrance of Earth’s Past, #2)"
+            <div class="gr_grid_book_container"><a title="The Dark Forest (Remembrance of Earth's Past, #2)"
                     rel="nofollow" href="https://www.goodreads.com/book/show/23168817-the-dark-forest"><img
                         alt="The Dark Forest" border="0"
                         src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1412064931l/23168817._SX98_.jpg" /></a>
@@ -180,7 +220,7 @@
                         alt="Broke Millennial: Stop Scraping By and Get Your Financial Life Together" border="0"
                         src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488693307l/32335700._SX98_.jpg" /></a>
             </div>
-            <div class="gr_grid_book_container"><a title="Death's End (Remembrance of Earth’s Past, #3)" rel="nofollow"
+            <div class="gr_grid_book_container"><a title="Death's End (Remembrance of Earth's Past, #3)" rel="nofollow"
                     href="https://www.goodreads.com/book/show/25451264-death-s-end"><img alt="Death's End" border="0"
                         src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1430330507l/25451264._SX98_.jpg" /></a>
             </div>
