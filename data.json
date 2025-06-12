@@ -36,7 +36,7 @@
             "id": "2025-a9566dacc1e6455ebb7fff144d6e7e50",
             "name": "Ouroboros",
             "description": "Peer-to-peer UDP client",
-            "link": "https://github.com/yourusername/task-manager",
+            "link": "https://github.com/Kaya-Sem/ouroboros",
             "tags": ["go", "networking", "docker", "p2p"],
             "wip": true
         },
@@ -84,8 +84,8 @@
             "id": "2025-b0c866ac55e6441caf619a98d9a8c6f8",
             "name": "kaya-sem.com",
             "description": "Portfolio website showcasing my projects and skills",
-            "link": "https://github.com/yourusername/data-viz",
-            "tags": ["d3", "web"],
+            "link": "https://github.com/Kaya-Sem/website",
+            "tags": ["web"],
             "wip": false
         }
     ]
