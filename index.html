@@ -28,6 +28,73 @@
             padding: 8px;
         }
 
+        .intro-box {
+            border: 2px solid #000000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: glitchBorder 20s ease-in-out infinite;
+        }
+
+        .intro-box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            animation: glitchBorder 20s ease-in-out infinite reverse;
+        }
+
+        .intro-box::after {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            border: 2px solid #000000;
+            border-radius: 11px;
+            animation: glitchBorder 20s ease-in-out infinite;
+        }
+
+        @keyframes glitchBorder {
+            0%, 100% {
+                transform: translate(0, 0) skew(0deg);
+            }
+            10% {
+                transform: translate(-2px, 1px) skew(-1deg);
+            }
+            20% {
+                transform: translate(1px, -2px) skew(1deg);
+            }
+            30% {
+                transform: translate(-1px, 2px) skew(-0.5deg);
+            }
+            40% {
+                transform: translate(2px, -1px) skew(0.5deg);
+            }
+            50% {
+                transform: translate(-1px, -1px) skew(-0.3deg);
+            }
+            60% {
+                transform: translate(1px, 1px) skew(0.3deg);
+            }
+            70% {
+                transform: translate(-2px, -2px) skew(-0.7deg);
+            }
+            80% {
+                transform: translate(2px, 2px) skew(0.7deg);
+            }
+            90% {
+                transform: translate(-1px, 1px) skew(-0.2deg);
+            }
+        }
+
         @keyframes pulsate {
             0% {
                 transform: scale(1);
@@ -107,29 +174,31 @@
 
 <body>
 
-    <p>kaya-sem</p>
+    <div class="intro-box">
+        <p>kaya-sem</p>
 
-    <ul style="list-style-type: none;">
-        <li> <a href="graph.html" class="nav-link">Projects (large screen only)</a></li>
+        <ul style="list-style-type: none;">
+            <li> <a href="graph.html" class="nav-link">Projects (large screen only)</a></li>
 
-        <li><a href="https://github.com/Kaya-Sem" class="nav-link">Github</a></li>
+            <li><a href="https://github.com/Kaya-Sem" class="nav-link">Github</a></li>
 
-        <li>
-            <a href="https://gitlab.com/kayasem" class="nav-link">Gitlab (archived projects)</a>
-        </li>
-    </ul>
+            <li>
+                <a href="https://gitlab.com/kayasem" class="nav-link">Gitlab (archived projects)</a>
+            </li>
+        </ul>
 
-    <p> Other websites I run </p>
+        <p> Other websites I run </p>
 
-    <ul style="list-style-type: none;">
-        <li>
-            <a href="https://outdoorshops.kaya-sem.com/" class="nav-link">Backpacking shops</a>
-        </li>
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="https://outdoorshops.kaya-sem.com/" class="nav-link">Backpacking shops</a>
+            </li>
 
-        <li>
-            <a href="https://rooftopper.club/" class="nav-link">Rooftopper</a>
-        </li>
-    </ul>
+            <li>
+                <a href="https://rooftopper.club/" class="nav-link">Rooftopper</a>
+            </li>
+        </ul>
+    </div>
 
 
 
