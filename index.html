@@ -402,45 +402,79 @@
         </div>
     </div>
 
+    <hr class="section-break">
+
+    <div class="mountain-container">
+        <img src="pictures/mountain.png" alt="Mountain divider" class="mountain-divider">
+        <div class="overlay-content">
+            <p> My Things </p>
+
+            <ul style="list-style-type: none;">
+
+                <li>
+                    <a href="data/homelab.html" class="nav-link">Homelab</a>
+                </li>
+                <li>
+                    <a href="data/names.html" class="nav-link">Names</a>
+                </li>
+
+                <li>
+                    <a href="data/home.html" class="nav-link">Home</a>
+                </li>
 
 
-    <p> My Things </p>
-
-    <ul style="list-style-type: none;">
-
-        <li>
-            <a href="data/homelab.html" class="nav-link">Homelab</a>
-        </li>
-        <li>
-            <a href="data/names.html" class="nav-link">Names</a>
-        </li>
-
-        <li>
-            <a href="data/home.html" class="nav-link">Home</a>
-        </li>
+                <li>
+                    <a href="data/technology-use.html" class="nav-link">Technology Use</a>
+                </li>
 
 
-        <li>
-            <a href="data/technology-use.html" class="nav-link">Technology Use</a>
-        </li>
+                <li>
+                    <a href="data/wishlist.html" class="nav-link">My small wishlist</a>
+                </li>
+
+                <li>
+                    <a href="data/papers.html" class="nav-link">Cool scientific papers</a>
+                </li>
 
 
-        <li>
-            <a href="data/wishlist.html" class="nav-link">My small wishlist</a>
-        </li>
+            </ul>
+        </div>
+    </div>
 
-        <li>
-            <a href="data/papers.html" class="nav-link">Cool scientific papers</a>
-        </li>
-
-
-    </ul>
     <style>
         .section-break {
           border: none;
           border-top: 2px solid #ccc;
           margin: 24px 0;
           width: 100%;
+        }
+
+                .mountain-container {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          margin-right: -20px;
+          padding-right: 0;
+        }
+
+        .mountain-divider {
+          height: 300px;
+          margin: 0px;
+          display: block;
+          object-fit: fill;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .overlay-content {
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translateY(-50%);
+          padding: 20px;
+          text-align: left;
+          z-index: 1;
         }
       </style>
 
