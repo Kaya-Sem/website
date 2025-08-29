@@ -132,23 +132,79 @@
     </ul>
 
 
-    <p class="standout demonic"> Things that are literally demonic: </p>
 
-    <ul class="demonic-list">
-        <li>social media</li>
-        <li>computer mice</li>
-        <li>television, movies and series</li>
-        <li>adobe software</li>
-        <li>smartphones</li>
-        <li>lifestyle inflation</li>
-        <li>the news</li>
-        <li>alcohol</li>
-        <li>car-centrism</li>
-        <li>javascript</li>
-    </ul>
+<style>
+.demonic-list {
+  list-style: none;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 0;
+  border-radius: 50%;
+  background-image: url('pictures/pentagram.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.demonic-list li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+}
+
+.demonic-list li > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.demonic-list li:nth-child(1)  { transform: rotate(0deg)   translateY(-190px); }
+.demonic-list li:nth-child(2)  { transform: rotate(36deg)  translateY(-190px); }
+.demonic-list li:nth-child(3)  { transform: rotate(72deg)  translateY(-250px); }
+.demonic-list li:nth-child(4)  { transform: rotate(108deg) translateY(-210px); }
+.demonic-list li:nth-child(5)  { transform: rotate(144deg) translateY(-200px); }
+.demonic-list li:nth-child(6)  { transform: rotate(180deg) translateY(-200px); }
+.demonic-list li:nth-child(7)  { transform: rotate(216deg) translateY(-200px); }
+.demonic-list li:nth-child(8)  { transform: rotate(252deg) translateY(-200px); }
+.demonic-list li:nth-child(9)  { transform: rotate(288deg) translateY(-200px); }
+.demonic-list li:nth-child(10) { transform: rotate(324deg) translateY(-200px); }
+
+.demonic-list li:nth-child(1)  > span { transform: translate(-50%, -50%) rotate(0deg); }
+.demonic-list li:nth-child(2)  > span { transform: translate(-50%, -50%) rotate(-36deg); }
+.demonic-list li:nth-child(3)  > span { transform: translate(-50%, -50%) rotate(-72deg); }
+.demonic-list li:nth-child(4)  > span { transform: translate(-50%, -50%) rotate(-108deg); }
+.demonic-list li:nth-child(5)  > span { transform: translate(-50%, -50%) rotate(-144deg); }
+.demonic-list li:nth-child(6)  > span { transform: translate(-50%, -50%) rotate(-180deg); }
+.demonic-list li:nth-child(7)  > span { transform: translate(-50%, -50%) rotate(-216deg); }
+.demonic-list li:nth-child(8)  > span { transform: translate(-50%, -50%) rotate(-252deg); }
+.demonic-list li:nth-child(9)  > span { transform: translate(-50%, -50%) rotate(-288deg); }
+.demonic-list li:nth-child(10) > span { transform: translate(-50%, -50%) rotate(-324deg); }
+</style>
+
+<p class="standout demonic"> Things that are literally demonic: </p>
+
+<ul class="demonic-list">
+  <li><span>social media</span></li>
+  <li><span>computer mice</span></li>
+  <li><span>television, movies and series</span></li>
+  <li><span>adobe software</span></li>
+  <li><span>smartphones</span></li>
+  <li><span>lifestyle inflation</span></li>
+  <li><span>the news</span></li>
+  <li><span>alcohol</span></li>
+  <li><span>car-centrism</span></li>
+  <li><span>javascript</span></li>
+</ul>
 
 
-    <img src="mindcontrol.webp" alt="Mind Control" style="max-width: 30%; height: auto;" class="pulsate">
+
+
+<!--     <img src="mindcontrol.webp" alt="Mind Control" style="max-width: 30%; height: auto;" class="pulsate"> -->
 
     <p class="standout angelic"> Things that are literally angelic: </p>
 
