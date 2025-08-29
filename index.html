@@ -48,6 +48,7 @@
             border: 2px solid #000000;
             border-radius: 12px;
             animation: glitchBorder 20s ease-in-out infinite reverse;
+            z-index: -1;
         }
 
         .intro-box::after {
@@ -60,6 +61,7 @@
             border: 2px solid #000000;
             border-radius: 11px;
             animation: glitchBorder 20s ease-in-out infinite;
+            z-index: -2;
         }
 
         @keyframes glitchBorder {
@@ -254,6 +256,14 @@
         .thing-item:nth-child(4n) {
             background: linear-gradient(135deg, #fff3e0, #ffe0b2);
             border-color: #ffcc80;
+        }
+
+        .thing-item:visited {
+            color: #495057;
+        }
+
+        .thing-item:visited:hover {
+            color: #212529;
         }
     </style>
 </head>
