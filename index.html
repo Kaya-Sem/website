@@ -169,6 +169,92 @@
             animation: angelic 4s ease-in-out infinite;
             color: white;
         }
+
+        .things-container {
+            border: 2px solid #dee2e6;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .things-title {
+            text-align: center;
+            margin: 0 0 25px 0;
+            color: #495057;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: lowercase;
+        }
+
+        .things-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 0;
+        }
+
+        .thing-item {
+            display: block;
+            padding: 12px 16px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thing-item:hover {
+            text-decoration: none;
+        }
+
+        .thing-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .thing-item:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #6c757d;
+            color: #212529;
+        }
+
+        .thing-item:hover::before {
+            left: 100%;
+        }
+
+        .thing-item:nth-child(odd) {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-color: #90caf9;
+        }
+
+        .thing-item:nth-child(even) {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            border-color: #ce93d8;
+        }
+
+        .thing-item:nth-child(3n) {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-color: #a5d6a7;
+        }
+
+        .thing-item:nth-child(4n) {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-color: #ffcc80;
+        }
     </style>
 </head>
 
@@ -283,71 +369,28 @@
 
     </ul>
 
-    <p> Things </p>
-
-    <ul style="list-style-type: none;">
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Nirvana_fallacy" class="nav-link">Nirvana fallacy</a>
-        </li>
-        <li>
-            <a href="https://suberic.net/~dmm/projects/mystical/README.html" class="nav-link">Mystical</a>
-        </li>
-
-        <li>
-            <a href="https://plato.stanford.edu/entries/sorites-paradox/" class="nav-link">Sorites Paradox</a>
-        </li>
-
-        <li>
-            <a href="data/yerkes-dodson.html" class="nav-link">Yerkes-Dodson Law</a>
-        </li>
-
-        <li>
-            <a href="data/integral-theory.html" class="nav-link">Integral Theory (psychology)</a>
-        </li>
-
-        <li>
-            <a href="http://www.aaronsw.com/weblog/" class="nav-link">Aaron Swartz blog</a>
-        </li>
-        <li>
-            <a href="https://en.wikipedia.org/wiki/Hard_link" class="nav-link">Hard link</a>
-        </li>
-<li>
-            <a href="https://yugoslavia.best/" class="nav-link">yugoslavia.best</a>
-        </li>
-<li>
-            <a href="http://reactor-core.org/" class="nav-link">reactor-core.org</a>
-        </li>
-<li>
-            <a href="https://en.wikipedia.org/wiki/Roof_and_tunnel_hacking" class="nav-link">tunnel hacking</a>
-        </li>
-<li>
-            <a href="https://justfuckingusehtml.com/" class="nav-link">just fucking use HTML</a>
-        </li>
-
-        <li>
-            <a href="https://htmx.org/essays/locality-of-behaviour/" class="nav-link">Locality of Behaviour</a>
-        </li>
-
-        <li>
-            <a href="documents/ImprovisedMunitionsHandbook.pdf" class="nav-link">Improvid Muntitions Handbook</a>
-        </li>
-
-         <li>
-            <a href="https://www.chem1.com/CQ/" class="nav-link">Water-related pseudoscience fantasy and quackery</a>
-        </li>
-
-        <li>
-            <a href="https://datavizcatalogue.com/" class="nav-link">The Data Visualisation Catalogue</a>
-        </li>
-
-        <li>
-            <a href="https://www.conventionalcommits.org/en/v1.0.0/" class="nav-link">Conventional Commits</a>
-        </li>
-
-        <li>
-            <a href="https://bwindey.github.io/" class="nav-link">bwindey blog</a>
-        </li>
-    </ul>
+    <div class="things-container">
+        <h3 class="things-title">Prutskes en Brollekes</h3>
+        <div class="things-grid">
+            <a href="https://en.wikipedia.org/wiki/Nirvana_fallacy" class="thing-item">Nirvana fallacy</a>
+            <a href="https://suberic.net/~dmm/projects/mystical/README.html" class="thing-item">Mystical</a>
+            <a href="https://plato.stanford.edu/entries/sorites-paradox/" class="thing-item">Sorites Paradox</a>
+            <a href="data/yerkes-dodson.html" class="thing-item">Yerkes-Dodson Law</a>
+            <a href="data/integral-theory.html" class="thing-item">Integral Theory</a>
+            <a href="http://www.aaronsw.com/weblog/" class="thing-item">Aaron Swartz blog</a>
+            <a href="https://en.wikipedia.org/wiki/Hard_link" class="thing-item">Hard link</a>
+            <a href="https://yugoslavia.best/" class="thing-item">yugoslavia.best</a>
+            <a href="http://reactor-core.org/" class="thing-item">reactor-core.org</a>
+            <a href="https://en.wikipedia.org/wiki/Roof_and_tunnel_hacking" class="thing-item">tunnel hacking</a>
+            <a href="https://justfuckingusehtml.com/" class="thing-item">just fucking use HTML</a>
+            <a href="https://htmx.org/essays/locality-of-behaviour/" class="thing-item">Locality of Behaviour</a>
+            <a href="documents/ImprovisedMunitionsHandbook.pdf" class="thing-item">Improvid Muntitions Handbook</a>
+            <a href="https://www.chem1.com/CQ/" class="thing-item">Water-related pseudoscience fantasy and quackery</a>
+            <a href="https://datavizcatalogue.com/" class="thing-item">The Data Visualisation Catalogue</a>
+            <a href="https://www.conventionalcommits.org/en/v1.0.0/" class="thing-item">Conventional Commits</a>
+            <a href="https://bwindey.github.io/" class="thing-item">bwindey blog</a>
+        </div>
+    </div>
 
 
 
