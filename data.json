@@ -4,7 +4,7 @@
             "id": "2025-ddf964418eff45ae947fdeaeec820a81",
             "name": "We are Hackathon 2025",
             "description": "Fun hackathon hosted by We Are.",
-            "link": "https://github.com/yourusername/hack",
+            "link": "https://github.com/weAreHackaton",
             "tags": ["event", "flutter", "mobile"],
             "wip": true
         },
@@ -76,7 +76,7 @@
             "id": "2025-662550edefdb423ea480deead8279d1b",
             "name": "Friendsync",
             "description": "Organize meeting with friends efficiently",
-            "link": "https://github.com/yourusername/task-manager",
+            "link": "https://github.com/Kaya-Sem/friendsync",
             "tags": ["flutter", "mobile", "firebase"],
             "wip": true
         },
