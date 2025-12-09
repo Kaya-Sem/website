@@ -147,12 +147,8 @@
         }
 
         .things-container {
-            border: 2px solid #dee2e6;
-            border-radius: 15px;
             padding: 25px;
             margin: 30px 0;
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .things-title {
@@ -164,76 +160,27 @@
             text-transform: lowercase;
         }
 
-        .things-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 0;
+        #wordcloud-container {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .thing-item {
-            display: block;
-            padding: 12px 16px;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            text-decoration: none;
-            color: #495057;
-            font-weight: 500;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .thing-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
+        #wordcloud-container svg {
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.5s ease;
         }
 
-        .thing-item:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            border-color: #6c757d;
-            color: #212529;
+        .wordcloud-word {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
         }
 
-        .thing-item:hover::before {
-            left: 100%;
-        }
-
-        .thing-item:nth-child(odd) {
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-            border-color: #90caf9;
-        }
-
-        .thing-item:nth-child(even) {
-            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-            border-color: #ce93d8;
-        }
-
-        .thing-item:nth-child(3n) {
-            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
-            border-color: #a5d6a7;
-        }
-
-        .thing-item:nth-child(4n) {
-            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-            border-color: #ffcc80;
-        }
-
-        .thing-item:visited {
-            color: #495057;
-        }
-
-        .thing-item:visited:hover {
-            color: #212529;
+        .wordcloud-word:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -309,32 +256,7 @@
 
     <div class="things-container">
         <h3 class="things-title">Prutskes en Brollekes</h3>
-        <div class="things-grid">
-
-            <a href="https://en.wikipedia.org/wiki/Thundering_herd_problem" class="thing-item">Thundering herd problem</a>
-            <a href="https://en.wikipedia.org/wiki/Nirvana_fallacy" class="thing-item">Nirvana fallacy</a>
-            <a href="https://suberic.net/~dmm/projects/mystical/README.html" class="thing-item">Mystical</a>
-            <a href="https://plato.stanford.edu/entries/sorites-paradox/" class="thing-item">Sorites Paradox</a>
-            <a href="data/yerkes-dodson.html" class="thing-item">Yerkes-Dodson Law</a>
-            <a href="data/integral-theory.html" class="thing-item">Integral Theory</a>
-            <a href="http://www.aaronsw.com/weblog/" class="thing-item">Aaron Swartz blog</a>
-            <a href="https://en.wikipedia.org/wiki/Hard_link" class="thing-item">Hard link</a>
-            <a href="https://yugoslavia.best/" class="thing-item">yugoslavia.best</a>
-            <a href="http://reactor-core.org/" class="thing-item">reactor-core.org</a>
-            <a href="https://en.wikipedia.org/wiki/Roof_and_tunnel_hacking" class="thing-item">tunnel hacking</a>
-            <a href="https://justfuckingusehtml.com/" class="thing-item">just fucking use HTML</a>
-            <a href="https://htmx.org/essays/locality-of-behaviour/" class="thing-item">Locality of Behaviour</a>
-            <a href="documents/ImprovisedMunitionsHandbook.pdf" class="thing-item">Improvised Munitions Handbook</a>
-            <a href="https://www.chem1.com/CQ/" class="thing-item">Water-related pseudoscience fantasy and quackery</a>
-            <a href="https://datavizcatalogue.com/" class="thing-item">The Data Visualisation Catalogue</a>
-            <a href="https://www.conventionalcommits.org/en/v1.0.0/" class="thing-item">Conventional Commits</a>
-            <a href="https://bwindey.github.io/" class="thing-item">bwindey blog</a>
-            <a href="https://www.merriam-webster.com/dictionary/b%C3%AAte%20noire" class="thing-item">bête noire</a>
-            <a href="https://en.wikipedia.org/wiki/Maelstrom" class="thing-item">Maelstrom</a>
-            <a href="https://alexkondov.com/what-is-bikeshedding/" class="thing-item">Bikeshedding</a>
-            <a href="https://tigerstyle.dev/" class="thing-item">Tiger Style</a>
-            <a href="https://en.wikipedia.org/wiki/Sleeping_barber_problem" class="thing-item">Sleeping Barber Problem</a>
-        </div>
+        <div id="wordcloud-container"></div>
     </div>
 
     <hr class="section-break">
@@ -465,6 +387,117 @@
       </div>
       <script src="https://www.goodreads.com/review/grid_widget/165624475.pretentious%20bookshelf?cover_size=medium&hide_link=&hide_title=&num_books=200&order=d&shelf=read&sort=date_added&widget_id=1761695222" type="text/javascript" charset="utf-8"></script>
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-cloud@1.2.7/build/d3.layout.cloud.js"></script>
+    <script>
+        // Word cloud data - prutskes en brollekes
+        const wordCloudData = [
+            { text: "Thundering herd problem", url: "https://en.wikipedia.org/wiki/Thundering_herd_problem", size: 20 },
+            { text: "Nirvana fallacy", url: "https://en.wikipedia.org/wiki/Nirvana_fallacy", size: 18 },
+            { text: "Mystical", url: "https://suberic.net/~dmm/projects/mystical/README.html", size: 16 },
+            { text: "Sorites Paradox", url: "https://plato.stanford.edu/entries/sorites-paradox/", size: 19 },
+            { text: "Yerkes-Dodson Law", url: "data/yerkes-dodson.html", size: 17 },
+            { text: "Integral Theory", url: "data/integral-theory.html", size: 18 },
+            { text: "Aaron Swartz blog", url: "http://www.aaronsw.com/weblog/", size: 16 },
+            { text: "Hard link", url: "https://en.wikipedia.org/wiki/Hard_link", size: 15 },
+            { text: "yugoslavia.best", url: "https://yugoslavia.best/", size: 14 },
+            { text: "reactor-core.org", url: "http://reactor-core.org/", size: 14 },
+            { text: "tunnel hacking", url: "https://en.wikipedia.org/wiki/Roof_and_tunnel_hacking", size: 15 },
+            { text: "just fucking use HTML", url: "https://justfuckingusehtml.com/", size: 16 },
+            { text: "Locality of Behaviour", url: "https://htmx.org/essays/locality-of-behaviour/", size: 17 },
+            { text: "Improvised Munitions Handbook", url: "documents/ImprovisedMunitionsHandbook.pdf", size: 15 },
+            { text: "Water-related pseudoscience fantasy and quackery", url: "https://www.chem1.com/CQ/", size: 12 },
+            { text: "The Data Visualisation Catalogue", url: "https://datavizcatalogue.com/", size: 13 },
+            { text: "Conventional Commits", url: "https://www.conventionalcommits.org/en/v1.0.0/", size: 15 },
+            { text: "bwindey blog", url: "https://bwindey.github.io/", size: 14 },
+            { text: "bête noire", url: "https://www.merriam-webster.com/dictionary/b%C3%AAte%20noire", size: 15 },
+            { text: "Maelstrom", url: "https://en.wikipedia.org/wiki/Maelstrom", size: 16 },
+            { text: "Bikeshedding", url: "https://alexkondov.com/what-is-bikeshedding/", size: 17 },
+            { text: "Tiger Style", url: "https://tigerstyle.dev/", size: 15 },
+            { text: "Sleeping Barber Problem", url: "https://en.wikipedia.org/wiki/Sleeping_barber_problem", size: 16 }
+        ];
+
+        // Create word cloud
+        function createWordCloud() {
+            const container = d3.select("#wordcloud-container");
+            container.selectAll("*").remove();
+
+            const width = container.node().clientWidth || 800;
+            const height = 500;
+
+            const svg = container.append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            const g = svg.append("g")
+                .attr("transform", `translate(${width / 2},${height / 2})`);
+
+            // Create a map for quick URL lookup
+            const urlMap = {};
+            wordCloudData.forEach(d => {
+                urlMap[d.text] = d.url;
+            });
+
+            const layout = d3.layout.cloud()
+                .size([width, height])
+                .words(wordCloudData.map(d => ({ text: d.text, size: d.size })))
+                .padding(5)
+                .rotate(() => ~~(Math.random() * 2) * 90)
+                .font("Arial")
+                .fontSize(d => d.size * 2)
+                .on("end", draw);
+
+            layout.start();
+
+            function draw(words) {
+                const text = g.selectAll("text")
+                    .data(words, d => d.text);
+
+                text.enter()
+                    .append("text")
+                    .merge(text)
+                    .style("font-size", d => d.size + "px")
+                    .style("font-family", "Arial")
+                    .style("fill", (d, i) => {
+                        const colors = ["#495057", "#6c757d", "#868e96", "#adb5bd"];
+                        return colors[i % colors.length];
+                    })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+                    .text(d => d.text)
+                    .classed("wordcloud-word", true)
+                    .style("cursor", "pointer")
+                    .on("click", function(event, d) {
+                        const url = urlMap[d.text];
+                        if (url) {
+                            window.open(url, "_blank");
+                        }
+                    })
+                    .on("mouseover", function() {
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .style("fill", "#212529")
+                            .style("font-weight", "bold");
+                    })
+                    .on("mouseout", function(event, d) {
+                        const colors = ["#495057", "#6c757d", "#868e96", "#adb5bd"];
+                        const index = words.findIndex(w => w.text === d.text);
+                        d3.select(this)
+                            .transition()
+                            .duration(200)
+                            .style("fill", colors[index % colors.length])
+                            .style("font-weight", "normal");
+                    });
+
+                text.exit().remove();
+            }
+        }
+
+        // Initialize word cloud when page loads
+        window.addEventListener("load", createWordCloud);
+        window.addEventListener("resize", createWordCloud);
+    </script>
 
 </body>
 
