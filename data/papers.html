@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,56 +10,95 @@
             padding: 1em;
         }
 
-        .paper-link {
-            color: purple;
+        .papers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 160px);
+            gap: 0;
+        }
+
+        .paper-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .paper-item a {
+            display: block;
+            width: 160px;
+            height: 210px;
+            border: 1px solid #ccc;
+            overflow: hidden;
             text-decoration: none;
         }
 
-        .paper-link:hover {
-            text-decoration: underline;
+        .paper-item canvas {
+            width: 160px;
+            height: 210px;
         }
 
-        .description {
-            font-size: 0.9em;
-            color: #666;
-            margin-top: 0.2em;
-            margin-bottom: 1em;
+        .paper-item a:hover {
+            border-color: purple;
+        }
+
+        .paper-title {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.4em;
+            color: #333;
+            width: 160px;
         }
     </style>
 </head>
-
 <body>
-    <p>A list of interesting papers I've read</p>
+    <div class="papers-grid" id="papers-grid"></div>
 
-    <ul>
-        <li>
-            <a href="/documents/semantic_data_management.pdf" class="paper-link">
-                Semantic Data Management: Towards Querying Data with their Meaning
-            </a>
-            <div class="description">
-                Explores methods for querying data using semantic context in unix.
-            </div>
-        </li>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
+        const papers = [
+            { path: '/documents/semantic_data_management.pdf', title: 'Semantic Data Management' },
+            { path: '/documents/performance_anti_patterns.pdf', title: 'Performance Anti-Patterns' },
+            { path: '/documents/miy.pdf', title: 'Make It Yourself' },
+            { path: '/documents/Granovetter_Weak_Ties.pdf', title: 'The Strength of Weak Ties' },
+            { path: '/documents/engineering_of_programming_languages.pdf', title: 'Engineering of Programming Languages' },
+            { path: '/documents/fail_fast.pdf', title: 'Fail Fast' },
+        ];
 
-        <li>
-            <a href="/documents/performance_anti_patterns.pdf" class="paper-link">
-                Performance Anti-Patterns
-            </a>
-            <div class="description">
-                Common performance anti-patterns in software development—mistakes that degrade system efficiency—and
-                provides guidance on how to recognize and avoid them.
-            </div>
-        </li>
+        const grid = document.getElementById('papers-grid');
 
-        <li>
-            <a href="/documents/miy.pdf" class="paper-link">
-                Make It Yourself </a>
-            <div class="description">
-                1000 Useful Things To Make
-            </div>
-        </li>
-    </ul>
+        papers.forEach(paper => {
+            const item = document.createElement('div');
+            item.className = 'paper-item';
+
+            const link = document.createElement('a');
+            link.href = paper.path;
+            link.target = '_blank';
+
+            const canvas = document.createElement('canvas');
+            link.appendChild(canvas);
+            item.appendChild(link);
+
+            const title = document.createElement('div');
+            title.className = 'paper-title';
+            title.textContent = paper.title;
+            item.appendChild(title);
+
+            grid.appendChild(item);
+
+            pdfjsLib.getDocument(paper.path).promise.then(pdf => {
+                return pdf.getPage(1);
+            }).then(page => {
+                const viewport = page.getViewport({ scale: 1 });
+                const scale = (160 / viewport.width) * 3;
+                const scaled = page.getViewport({ scale });
+                canvas.width = scaled.width;
+                canvas.height = scaled.height;
+                canvas.style.width = '160px';
+                canvas.style.height = '210px';
+                page.render({ canvasContext: canvas.getContext('2d'), viewport: scaled });
+            });
+        });
+    </script>
 </body>
-
 </html>
